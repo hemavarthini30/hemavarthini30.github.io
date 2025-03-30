@@ -208,8 +208,8 @@ p {
   .hero-image,
   .profile-image {
     top: 30%; /* Move further down for smaller screens */
-    right: 50%;
-    transform: translateX(50%); /* Center on smaller screens */
+    left: 50%;
+    transform: translateX(-50%); /* Properly center on smaller screens */
   }
 
   .hero-image img,
