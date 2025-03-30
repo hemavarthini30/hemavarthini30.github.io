@@ -203,25 +203,21 @@ p {
 .hero {
   position: relative; /* Ensures child elements like .hero-image position properly */
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-image,
+  .profile-image {
+    top: 30%; /* Move further down for smaller screens */
+    right: 50%;
+    transform: translateX(50%); /* Center on smaller screens */
+  }
 
-/* Hero Image - Right Corner */
-.hero-image {
-  position: absolute; /* Keeps it above the background */
-  top: 20%; /* Adjusted to move the image down */
-  right: 2%; /* Moves it to the right */
-  z-index: 10; /* Ensures it stays above the background */
+  .hero-image img,
+  .profile-image img {
+    width: 200px; /* Adjusted for mobile */
+    height: 200px;
+  }
 }
-
-/* Image Styling */
-.hero-image img {
-  width: 250px; /* Large size */
-  height: 250px;
-  border-radius: 10px; /* Slightly rounded corners */
-  object-fit: cover;
-  border: 5px solid white; /* Optional border for better visibility */
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-image {
